@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /*CSS element Selector*/
+        p{
+            color: coral;
+            background-color: #232323;
+        }
+        /*CSS id Selector*/
+        #footer{
+            bottom: 0px;
+        }
+        /*CSS class Selector*/
+        .paris{
+            border-radius: 10%;
+        }
+        /*CSS Universal Selector*/
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /*Attribute selector*/
+        a[target] {
+            background-color: yellow;
+        }
+        /*CSS Grouping Selector*/
+        h1,h3{
+            color: rgb(241, 179, 21);
+            background-color: firebrick;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Heading 1</h1><br>
+    <h2>Heading 2</h2><br>
+    <h3>Heading 3</h3>
+    <br>
+    <div>
+        <p>The paragraph text gos here <a href="#" target="_blank">Link that does not work</a></p>
+    </div><br>
+    <img src="https://www.w3schools.com/css/paris.jpg" alt="paris" class="paris"><br>
+    <footer id="footer">Made with Love By : mishracodes
+        <br>
+        <a href="mailto:amitmishra.rh@gmail.com">amitmishra.rh@gmail.com</a>
+    </footer>
+</body>
+</html>
