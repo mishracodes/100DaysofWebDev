@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Lists</title>
+    <style>
+        .ul1{
+            list-style-type: square;
+        }
+        .ol1{
+            list-style-type: lower-roman;
+            background: #fce302;
+            padding: 10px;
+            margin: 10px;
+        }
+        .ol1>li{
+            background: #09e23f;
+            margin: 10px;
+        }
+        .ul2{
+            list-style-image: url('http://mmmut.ac.in/images/33.gif');
+        }
+        .ul3{
+            list-style-position: inside;
+        }
+        .shorthand{
+            list-style: square outside url("http://mmmut.ac.in/images/33.gif");
+        }
+        .remove{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <h3>Unordered List 1</h3>
+
+<ul class="ul1">
+    <li>Cat</li>
+    <li>Dog</li>
+    <li>Cow</li>
+    <li>Horse</li>
+</ul>
+
+<h3>Ordered List 1</h3>
+
+<ol class="ol1" start="10">
+    <li>Meow</li>
+    <li>Bark</li>
+    <li>Moo</li>
+    <li>Neigh</li>
+</ol>
+
+<br>
+
+<h3>Unordered List 2</h3>
+
+<ul class="ul2">
+    <li>Cat</li>
+    <li>Dog</li>
+    <li>Cow</li>
+    <li>Horse</li>
+</ul>
+
+<h3>Unordered List 3</h3>
+
+<ul class="ul3">
+    <li>Cat Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident tempora explicabo saepe, eaque eum rerum ratione at, mollitia numquam possimus officia inventore excepturi temporibus autem molestias. Reiciendis porro nulla mollitia animi? Ducimus quam harum laudantium, laborum qui dolore nulla ipsum? Asperiores aperiam consequatur repellat labore ab expedita exercitationem id deleniti hic? Accusantium repellat aliquid error quidem eum tempore libero quam, quibusdam dolor, molestias iure deserunt reiciendis eaque laborum, corrupti iste. Nam quod nobis, quisquam consequatur cumque porro sit id aperiam minus esse aliquam veniam fugiat voluptatum labore pariatur iste incidunt obcaecati, qui enim vel! Distinctio, veritatis hic! Id eum soluta magni dolor cupiditate totam nulla odio, hic illum officia modi quo expedita perferendis molestiae eos voluptas, esse veritatis fugit mollitia est, ipsum tempora. Ducimus, magnam! Culpa beatae minima ratione voluptates omnis nihil veritatis vitae qui cumque dicta? Veritatis magnam, exercitationem impedit corporis quasi quia mollitia officia quaerat minus iusto natus.</li>
+    <li>Dog Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident tempora explicabo saepe, eaque eum rerum ratione at, mollitia numquam possimus officia inventore excepturi temporibus autem molestias. Reiciendis porro nulla mollitia animi? Ducimus quam harum laudantium, laborum qui dolore nulla ipsum? Asperiores aperiam consequatur repellat labore ab expedita exercitationem id deleniti hic? Accusantium repellat aliquid error quidem eum tempore libero quam, quibusdam dolor, molestias iure deserunt reiciendis eaque laborum, corrupti iste. Nam quod nobis, quisquam consequatur cumque porro sit id aperiam minus esse aliquam veniam fugiat voluptatum labore pariatur iste incidunt obcaecati, qui enim vel! Distinctio, veritatis hic! Id eum soluta magni dolor cupiditate totam nulla odio, hic illum officia modi quo expedita perferendis molestiae eos voluptas, esse veritatis fugit mollitia est, ipsum tempora. Ducimus, magnam! Culpa beatae minima ratione voluptates omnis nihil veritatis vitae qui cumque dicta? Veritatis magnam, exercitationem impedit corporis quasi quia mollitia officia quaerat minus iusto natus.</li>
+    <li>Cow Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident tempora explicabo saepe, eaque eum rerum ratione at, mollitia numquam possimus officia inventore excepturi temporibus autem molestias. Reiciendis porro nulla mollitia animi? Ducimus quam harum laudantium, laborum qui dolore nulla ipsum? Asperiores aperiam consequatur repellat labore ab expedita exercitationem id deleniti hic? Accusantium repellat aliquid error quidem eum tempore libero quam, quibusdam dolor, molestias iure deserunt reiciendis eaque laborum, corrupti iste. Nam quod nobis, quisquam consequatur cumque porro sit id aperiam minus esse aliquam veniam fugiat voluptatum labore pariatur iste incidunt obcaecati, qui enim vel! Distinctio, veritatis hic! Id eum soluta magni dolor cupiditate totam nulla odio, hic illum officia modi quo expedita perferendis molestiae eos voluptas, esse veritatis fugit mollitia est, ipsum tempora. Ducimus, magnam! Culpa beatae minima ratione voluptates omnis nihil veritatis vitae qui cumque dicta? Veritatis magnam, exercitationem impedit corporis quasi quia mollitia officia quaerat minus iusto natus.</li>
+    <li>Horse Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident tempora explicabo saepe, eaque eum rerum ratione at, mollitia numquam possimus officia inventore excepturi temporibus autem molestias. Reiciendis porro nulla mollitia animi? Ducimus quam harum laudantium, laborum qui dolore nulla ipsum? Asperiores aperiam consequatur repellat labore ab expedita exercitationem id deleniti hic? Accusantium repellat aliquid error quidem eum tempore libero quam, quibusdam dolor, molestias iure deserunt reiciendis eaque laborum, corrupti iste. Nam quod nobis, quisquam consequatur cumque porro sit id aperiam minus esse aliquam veniam fugiat voluptatum labore pariatur iste incidunt obcaecati, qui enim vel! Distinctio, veritatis hic! Id eum soluta magni dolor cupiditate totam nulla odio, hic illum officia modi quo expedita perferendis molestiae eos voluptas, esse veritatis fugit mollitia est, ipsum tempora. Ducimus, magnam! Culpa beatae minima ratione voluptates omnis nihil veritatis vitae qui cumque dicta? Veritatis magnam, exercitationem impedit corporis quasi quia mollitia officia quaerat minus iusto natus.</li>
+</ul>
+
+<h3>Ordered List 2</h3>
+
+<ol class="shorthand" start="10">
+    <li>Meow Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident tempora explicabo saepe, eaque eum rerum ratione at, mollitia numquam possimus officia inventore excepturi temporibus autem molestias. Reiciendis porro nulla mollitia animi? Ducimus quam harum laudantium, laborum qui dolore nulla ipsum? Asperiores aperiam consequatur repellat labore ab expedita exercitationem id deleniti hic? Accusantium repellat aliquid error quidem eum tempore libero quam, quibusdam dolor, molestias iure deserunt reiciendis eaque laborum, corrupti iste. Nam quod nobis, quisquam consequatur cumque porro sit id aperiam minus esse aliquam veniam fugiat voluptatum labore pariatur iste incidunt obcaecati, qui enim vel! Distinctio, veritatis hic! Id eum soluta magni dolor cupiditate totam nulla odio, hic illum officia modi quo expedita perferendis molestiae eos voluptas, esse veritatis fugit mollitia est, ipsum tempora. Ducimus, magnam! Culpa beatae minima ratione voluptates omnis nihil veritatis vitae qui cumque dicta? Veritatis magnam, exercitationem impedit corporis quasi quia mollitia officia quaerat minus iusto natus.</li>
+    <li>Bark Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident tempora explicabo saepe, eaque eum rerum ratione at, mollitia numquam possimus officia inventore excepturi temporibus autem molestias. Reiciendis porro nulla mollitia animi? Ducimus quam harum laudantium, laborum qui dolore nulla ipsum? Asperiores aperiam consequatur repellat labore ab expedita exercitationem id deleniti hic? Accusantium repellat aliquid error quidem eum tempore libero quam, quibusdam dolor, molestias iure deserunt reiciendis eaque laborum, corrupti iste. Nam quod nobis, quisquam consequatur cumque porro sit id aperiam minus esse aliquam veniam fugiat voluptatum labore pariatur iste incidunt obcaecati, qui enim vel! Distinctio, veritatis hic! Id eum soluta magni dolor cupiditate totam nulla odio, hic illum officia modi quo expedita perferendis molestiae eos voluptas, esse veritatis fugit mollitia est, ipsum tempora. Ducimus, magnam! Culpa beatae minima ratione voluptates omnis nihil veritatis vitae qui cumque dicta? Veritatis magnam, exercitationem impedit corporis quasi quia mollitia officia quaerat minus iusto natus.</li>
+    <li>Moo Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident tempora explicabo saepe, eaque eum rerum ratione at, mollitia numquam possimus officia inventore excepturi temporibus autem molestias. Reiciendis porro nulla mollitia animi? Ducimus quam harum laudantium, laborum qui dolore nulla ipsum? Asperiores aperiam consequatur repellat labore ab expedita exercitationem id deleniti hic? Accusantium repellat aliquid error quidem eum tempore libero quam, quibusdam dolor, molestias iure deserunt reiciendis eaque laborum, corrupti iste. Nam quod nobis, quisquam consequatur cumque porro sit id aperiam minus esse aliquam veniam fugiat voluptatum labore pariatur iste incidunt obcaecati, qui enim vel! Distinctio, veritatis hic! Id eum soluta magni dolor cupiditate totam nulla odio, hic illum officia modi quo expedita perferendis molestiae eos voluptas, esse veritatis fugit mollitia est, ipsum tempora. Ducimus, magnam! Culpa beatae minima ratione voluptates omnis nihil veritatis vitae qui cumque dicta? Veritatis magnam, exercitationem impedit corporis quasi quia mollitia officia quaerat minus iusto natus.</li>
+    <li>Neigh Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident tempora explicabo saepe, eaque eum rerum ratione at, mollitia numquam possimus officia inventore excepturi temporibus autem molestias. Reiciendis porro nulla mollitia animi? Ducimus quam harum laudantium, laborum qui dolore nulla ipsum? Asperiores aperiam consequatur repellat labore ab expedita exercitationem id deleniti hic? Accusantium repellat aliquid error quidem eum tempore libero quam, quibusdam dolor, molestias iure deserunt reiciendis eaque laborum, corrupti iste. Nam quod nobis, quisquam consequatur cumque porro sit id aperiam minus esse aliquam veniam fugiat voluptatum labore pariatur iste incidunt obcaecati, qui enim vel! Distinctio, veritatis hic! Id eum soluta magni dolor cupiditate totam nulla odio, hic illum officia modi quo expedita perferendis molestiae eos voluptas, esse veritatis fugit mollitia est, ipsum tempora. Ducimus, magnam! Culpa beatae minima ratione voluptates omnis nihil veritatis vitae qui cumque dicta? Veritatis magnam, exercitationem impedit corporis quasi quia mollitia officia quaerat minus iusto natus.</li>
+</ol>
+
+<br>
+
+<h3>Unordered List 4</h3>
+
+<ul class="remove">
+    <li>Cat</li>
+    <li>Dog</li>
+    <li>Cow</li>
+    <li>Horse</li>
+</ul>
+</body>
+</html>

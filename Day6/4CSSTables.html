@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Tables</title>
+    <style>
+        table, th, td{
+            border: 1px solid black;
+        }
+        
+        .fullWidth{
+            width: 100%;
+        }
+
+        tr:hover{
+            background-color: #63f040;
+        }
+        
+    </style>
+</head>
+<body>
+    <table style="border: none;">
+        <caption>Normal Table Template</caption>
+        <tr>
+          <th style="border: none;">Sr.</th>
+          <th style="border: none;">Name</th>
+          <th style="border: none;">Email</th>
+          <th style="border: none;">Phone</th>
+        </tr>
+        <tr>
+          <td style="border: none;">1</td>
+          <td style="border: none;">Ajay</td>
+          <td style="border: none;">ajay@gmail.com</td>
+          <td style="border: none;">+9150552265</td>
+        </tr>
+        <tr>
+            <td style="border: none;">2</td>
+            <td style="border: none;">Vinay</td>
+            <td style="border: none;">vinay@gmail.com</td>
+            <td style="border: none;">+91684524</td>
+        </tr>
+        <tr>
+            <td style="border: none;">3</td>
+            <td style="border: none;" colspan="3">Binod</td>
+            
+        </tr>
+    </table>
+
+    <hr>
+
+    <table>
+        <caption>Table with border</caption>
+        <tr>
+          <th>Sr.</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Phone</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Ajay</td>
+          <td>ajay@gmail.com</td>
+          <td>+9150552265</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Vinay</td>
+            <td>vinay@gmail.com</td>
+            <td>+91684524</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td colspan="3">Binod</td>
+            
+        </tr>
+    </table>
+
+    <hr>
+
+<div style="overflow-x:auto;">
+    <table style="width: 100%; text-align: center; border-collapse: collapse;">
+        <caption>Table with full width and center align</caption>
+        <tr>
+          <th>Sr.</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Phone</th>
+          <th>Phone</th>
+          <th>Phone</th>
+          <th>Phone</th>
+          <th>Phone</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Ajay</td>
+          <td>ajay@gmail.com</td>
+          <td>+9150552265</td>
+          <td>+9150552265</td>
+          <td>+9150552265</td>
+          <td>+9150552265</td>
+          <td>+9150552265</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Vinay</td>
+            <td>vinay@gmail.com</td>
+            <td>+91684524</td>
+            <td>+91684524</td>
+            <td>+91684524</td>
+            <td>+91684524</td>
+            <td>+91684524</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td colspan="7">Binod</td>
+            
+        </tr>
+    </table>
+</div>
+    <hr>
+
+    <table style="width: 100%;">
+        <caption>Table with full width and vertical alignment</caption>
+        <tr>
+          <th style="height: 50px; vertical-align: bottom;">Sr.</th>
+          <th style="height: 50px; vertical-align: bottom;">Name</th>
+          <th style="height: 50px; vertical-align: bottom;">Email</th>
+          <th style="height: 50px; vertical-align: bottom;">Phone</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Ajay</td>
+          <td>ajay@gmail.com</td>
+          <td>+9150552265</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Vinay</td>
+            <td>vinay@gmail.com</td>
+            <td>+91684524</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td colspan="3">Binod</td>
+            
+        </tr>
+    </table>
+
+    <hr>
+
+
+    <table style="border-collapse: collapse; width: 100%;">
+        <caption>Table with border</caption>
+        <tr style="background-color: #fc7405;">
+          <th style="height: 70px; padding: 15px;">Sr.</th>
+          <th style="height: 70px; padding: 15px;">Name</th>
+          <th style="height: 70px; padding: 15px;">Email</th>
+          <th style="height: 70px; padding: 15px;">Phone</th>
+        </tr>
+        <tr  style="background-color: #fcb073;">
+          <td  style="padding: 15px;">1</td>
+          <td  style="padding: 15px;">Ajay</td>
+          <td  style="padding: 15px;">ajay@gmail.com</td>
+          <td  style="padding: 15px;">+9150552265</td>
+        </tr>
+        <tr  style="background-color: #fcb073;">
+            <td>2</td>
+            <td>Vinay</td>
+            <td>vinay@gmail.com</td>
+            <td>+91684524</td>
+        </tr>
+        <tr  style="background-color: #fcb073;">
+            <td>3</td>
+            <td colspan="3">Binod</td>
+            
+        </tr>
+    </table>
+
+    <hr>
+</body>
+</html>
