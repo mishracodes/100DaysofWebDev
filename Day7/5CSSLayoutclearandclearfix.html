@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Layout - clear and clearfix</title>
+    <style>
+        .left{
+            float: left;
+        }
+        .none{
+            border: 4px solid tomato;
+        }
+        .clear{
+            border: 4px solid tomato;
+            clear: left;
+        }
+        .claerfix img{
+            float: left;
+        }
+        .clearfix {
+            border: 4px solid tomato;
+        }
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+    </style>
+</head>
+<body>
+    <p>Float Right</p>
+    <img class="left" src="https://pbs.twimg.com/profile_images/1377880324374327300/hefEOXbZ_400x400.jpg" width="5%" alt="">
+    <p class="none"> This is float with no clear |||||| Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque consequatur quo, unde animi necessitatibus maxime ratione! Delectus rem rerum quas culpa molestias reprehenderit animi praesentium reiciendis cupiditate nostrum voluptates beatae aspernatur aperiam natus dolorem sequi voluptas repellat repellendus quaerat dolorum quia, vitae corporis magnam! Fuga, aperiam! Minima quaerat quas suscipit cum a voluptatum omnis ipsum esse iusto eaque dolores deleniti qui iste velit possimus dolor, quo commodi. Quaerat rem maxime earum, explicabo dolorem officia sint obcaecati quibusdam aperiam porro esse praesentium impedit enim amet atque maiores ipsa facere exercitationem mollitia eligendi commodi assumenda placeat! Tenetur ipsum facere ex aut quam.</p>
+    <br>
+    <br>
+    <p>Float Left</p>
+    <img class="left"  src="https://pbs.twimg.com/profile_images/1377880324374327300/hefEOXbZ_400x400.jpg" width="5%" alt="">
+    <p class="clear"> This is float with clear|||||| Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque consequatur quo, unde animi necessitatibus maxime ratione! Delectus rem rerum quas culpa molestias reprehenderit animi praesentium reiciendis cupiditate nostrum voluptates beatae aspernatur aperiam natus dolorem sequi voluptas repellat repellendus quaerat dolorum quia, vitae corporis magnam! Fuga, aperiam! Minima quaerat quas suscipit cum a voluptatum omnis ipsum esse iusto eaque dolores deleniti qui iste velit possimus dolor, quo commodi. Quaerat rem maxime earum, explicabo dolorem officia sint obcaecati quibusdam aperiam porro esse praesentium impedit enim amet atque maiores ipsa facere exercitationem mollitia eligendi commodi assumenda placeat! Tenetur ipsum facere ex aut quam.</p>
+    <br>
+    <br><br>
+    <p>Float with clearfix</p>
+    <div class="clearfix">
+        <img src="https://pbs.twimg.com/profile_images/1377880324374327300/hefEOXbZ_400x400.jpg" width="5%" alt="">
+        This is float with clearfix |||||| Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque consequatur quo, unde animi necessitatibus maxime ratione! Delectus rem rerum quas culpa molestias reprehenderit animi praesentium reiciendis cupiditate nostrum voluptates beatae aspernatur aperiam natus dolorem sequi voluptas repellat repellendus quaerat dolorum quia, vitae corporis magnam! Fuga, aperiam! Minima quaerat quas suscipit cum a voluptatum omnis ipsum esse iusto eaque dolores deleniti qui iste velit possimus dolor, quo commodi. Quaerat rem maxime earum, explicabo dolorem officia sint obcaecati quibusdam aperiam porro esse praesentium impedit enim amet atque maiores ipsa facere exercitationem mollitia eligendi commodi assumenda placeat! Tenetur ipsum facere ex aut quam.
+    </div>
+
+</body>
+</html>

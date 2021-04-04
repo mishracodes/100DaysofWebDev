@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Layout Float</title>
+    <style>
+        .right img{
+            float: right;
+        }
+        .left img{
+            float: left;
+        }
+        .none img{
+            float: none;
+        }
+        .leftF{
+            float: left;
+            padding: 2px;
+            margin: 2px;
+        }
+        .container{
+            overflow: hidden;
+            width: 880px;
+            height: 150px;
+        }
+       
+    </style>
+</head>
+<body>
+    <p>Float Right</p>
+    <p class="right"><img src="https://pbs.twimg.com/profile_images/1377880324374327300/hefEOXbZ_400x400.jpg" width="5%" alt=""> This is float right |||||| Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque consequatur quo, unde animi necessitatibus maxime ratione! Delectus rem rerum quas culpa molestias reprehenderit animi praesentium reiciendis cupiditate nostrum voluptates beatae aspernatur aperiam natus dolorem sequi voluptas repellat repellendus quaerat dolorum quia, vitae corporis magnam! Fuga, aperiam! Minima quaerat quas suscipit cum a voluptatum omnis ipsum esse iusto eaque dolores deleniti qui iste velit possimus dolor, quo commodi. Quaerat rem maxime earum, explicabo dolorem officia sint obcaecati quibusdam aperiam porro esse praesentium impedit enim amet atque maiores ipsa facere exercitationem mollitia eligendi commodi assumenda placeat! Tenetur ipsum facere ex aut quam.</p>
+    <br>
+    <br>
+    <p>Float Left</p>
+    <p class="left"><img src="https://pbs.twimg.com/profile_images/1377880324374327300/hefEOXbZ_400x400.jpg" width="5%" alt=""> This is float left|||||| Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque consequatur quo, unde animi necessitatibus maxime ratione! Delectus rem rerum quas culpa molestias reprehenderit animi praesentium reiciendis cupiditate nostrum voluptates beatae aspernatur aperiam natus dolorem sequi voluptas repellat repellendus quaerat dolorum quia, vitae corporis magnam! Fuga, aperiam! Minima quaerat quas suscipit cum a voluptatum omnis ipsum esse iusto eaque dolores deleniti qui iste velit possimus dolor, quo commodi. Quaerat rem maxime earum, explicabo dolorem officia sint obcaecati quibusdam aperiam porro esse praesentium impedit enim amet atque maiores ipsa facere exercitationem mollitia eligendi commodi assumenda placeat! Tenetur ipsum facere ex aut quam.</p>
+    <br>
+    <br><br>
+    <p>Float none</p>
+     <p class="none"><img src="https://pbs.twimg.com/profile_images/1377880324374327300/hefEOXbZ_400x400.jpg" width="5%" alt=""> This is float none ||||||Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque consequatur quo, unde animi necessitatibus maxime ratione! Delectus rem rerum quas culpa molestias reprehenderit animi praesentium reiciendis cupiditate nostrum voluptates beatae aspernatur aperiam natus dolorem sequi voluptas repellat repellendus quaerat dolorum quia, vitae corporis magnam! Fuga, aperiam! Minima quaerat quas suscipit cum a voluptatum omnis ipsum esse iusto eaque dolores deleniti qui iste velit possimus dolor, quo commodi. Quaerat rem maxime earum, explicabo dolorem officia sint obcaecati quibusdam aperiam porro esse praesentium impedit enim amet atque maiores ipsa facere exercitationem mollitia eligendi commodi assumenda placeat! Tenetur ipsum facere ex aut quam.</p>
+    <br>
+    
+    
+    <p>Float left to each other</p>
+    <div class="container">
+    <div class="leftF"> <img width="200px" src="https://scontent-sjc3-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/p750x750/150182264_1416600328683262_2911258195137324963_n.jpg?tp=1&_nc_ht=scontent-sjc3-1.cdninstagram.com&_nc_cat=110&_nc_ohc=EnJxOOa-Pi4AX-z_q0C&edm=AABBvjUAAAAA&ccb=7-4&oh=15dafb019e1119d32c4448a00fbea9af&oe=608F303A&_nc_sid=83d603" alt=""></div>
+    <div class="leftF"> <img width="200px" src="https://scontent-sjc3-1.cdninstagram.com/v/t51.2885-15/e35/147874547_435977884276868_8763391482300565047_n.jpg?tp=1&_nc_ht=scontent-sjc3-1.cdninstagram.com&_nc_cat=108&_nc_ohc=Pg1Or6_iBfUAX9wBL9X&edm=AABBvjUAAAAA&ccb=7-4&oh=de270cfc2b9fab738c66fad6da4439c7&oe=608E876D&_nc_sid=83d603" alt=""></div>
+    <div class="leftF"> <img width="200px" src="https://scontent-sjc3-1.cdninstagram.com/v/t51.2885-15/e35/130865740_412009543564796_6432642081282005453_n.jpg?tp=1&_nc_ht=scontent-sjc3-1.cdninstagram.com&_nc_cat=108&_nc_ohc=rf6X39tZUzkAX8yVOaY&edm=AABBvjUAAAAA&ccb=7-4&oh=cfd88b29170791b76418eb1ba7806482&oe=60902D6C&_nc_sid=83d603" alt=""></div>
+    <div class="leftF"> <img width="200px" src="https://scontent-sjc3-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s750x750/17587506_1660419580920247_3696280233968664576_n.jpg?tp=1&_nc_ht=scontent-sjc3-1.cdninstagram.com&_nc_cat=107&_nc_ohc=VcYU7wTwANsAX-506MH&edm=AABBvjUAAAAA&ccb=7-4&oh=9a91f53bd4a27fc6770b61aec639206d&oe=608D2183&_nc_sid=83d603" alt=""></div>
+    </div>
+</body>
+</html>
