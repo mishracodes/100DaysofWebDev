@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Layout</title>
+    <style>
+
+        *{
+            box-sizing: border-box;
+        }
+        header{
+            background-color: darkolivegreen;
+            color: darkorange;
+            padding: 10px 40px;
+        }
+        footer{
+            background-color: darkolivegreen;
+            color: darkorange;
+            text-align: center;
+            padding: 10px 40px;
+        }
+        ul{
+            list-style: none;
+        }
+        li{
+            padding: 10px 30px;
+            margin-top: 5px;
+            background-color: goldenrod;
+        }
+        li:hover{
+            background-color: rgb(175, 128, 9);
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        .col{
+            float: left;
+        }
+        section::after{
+            content: "";
+            clear: both;
+            display: table;
+        }
+        .nav{
+            width:15%;
+        }
+        .content{
+            width: 70%;
+            padding: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+            <h1>MMMUT POCO 2020</h1>
+    </header>
+    <section>
+        <div class="col nav">
+            <ul>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#aboutus">ABOUT US</a></li>
+                <li><a href="#speaker">SPEAKER</a></li>
+                <li><a href="#venue">VENUE</a></li>
+                <li><a href="#ieeeup">IEEE UP SECTION</a></li>
+                <li><a href="#gc">GENERAL CHAIRS</a></li>
+                </ul>
+        </div>
+        <article class="col content">
+            <h1>ABOUT THE UNIVERSITY</h1>
+            <p>Madan Mohan Malaviya University of Technology, Gorakhpur has been established in year 2013 by Govt. of Uttar Pradesh in the form of a Non-Affiliating Technical University after reconstituting the Madan Mohan Malaviya Engineering College, Gorakhpur which was established in 1962. Fifty-six batches of students have entered its portals to emerge after 4 years of rigorous education under the tutelage of some of the most venerable teachers, engineers ready to face the world and create new world. There are total 11 Departments after recent establishment of 4 new departments which offer B. Tech., M. Tech., MCA, MBA and Ph.D. courses in various specializations. The university is in the eastern part of the city on Gorakhpur - Deoria road, about 9 Kilometers from Gorakhpur Railway Station as well as from main Gorakhpur Roadways bus-station. It is a fully residential technological University, with seven boys' hostels, four girls' hostels, and residences for faculty and staff.</p>
+        </article>
+    </section>
+    <footer>
+        <p class="footerText">Copyright ©2021 All rights reserved | Designed and Developed by mishracodes</p>
+    </footer>
+    
+</body>
+</html>
