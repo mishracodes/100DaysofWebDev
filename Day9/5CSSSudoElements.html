@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Sudo Elements</title>
+    <style>
+        p.fl::first-line {
+            color: #ff0000;
+            font-variant: small-caps;
+        }
+        p.fw::first-letter{
+            font-size: 40px;
+        }
+        p.border::before {
+            content: "";
+            border: 10px solid brown;
+            height: 10px;
+            width: 5px;
+        }
+        p.border::after {
+            content: "";
+            border: 10px solid brown;
+            height: 10px;
+            width: 5px;
+        }
+        ::marker{
+            color: coral;
+        }
+        ::selection {
+            color: rgb(0, 255, 85);
+            background: rgb(0, 0, 0);
+        }       
+    </style>
+</head>
+<body>
+    <p class="fl">First line demo |||||||||||||Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum quaerat reprehenderit excepturi doloremque quidem iste nam voluptatum suscipit quam velit, nesciunt cupiditate, obcaecati illo nobis. Ipsum sequi molestiae aut quam nesciunt repellat ipsa, quasi necessitatibus distinctio maxime iure id vero aspernatur? Magnam libero cum velit quae eaque in reiciendis dicta itaque corrupti iusto autem amet explicabo soluta excepturi rerum, repudiandae nihil sint eligendi odio expedita quod ipsa cupiditate repellendus maxime? Consequuntur nostrum sapiente rerum tenetur cupiditate, eum minus veniam modi et consequatur quibusdam recusandae culpa qui mollitia exercitationem. Minima expedita blanditiis modi commodi atque recusandae tempora nulla. At, omnis dignissimos.</p>
+    
+    <p class="fw">First letter demo ||||||||||||||| Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque assumenda voluptatum officiis nam aut eum. Excepturi eveniet in porro ab eius tempore accusantium repellendus quae soluta reiciendis inventore debitis nam cum explicabo, voluptatem quibusdam velit rem? Ipsa, animi dignissimos ipsam eligendi aliquid et alias quo molestias illum omnis maxime enim, dolorem voluptatibus quaerat quidem labore mollitia culpa harum? Eligendi autem dolor aliquid facere soluta quae. Sint consequuntur qui voluptas quisquam, optio iste reiciendis commodi dicta a ullam obcaecati laboriosam eos rerum in necessitatibus nobis numquam blanditiis, molestiae nihil? Dignissimos molestias reiciendis optio aperiam doloribus vero eligendi odio at tempora facilis! </p>
+
+
+    <p class="border">this is a pseudo class with before after</p>
+
+    <ul>
+        <li>gem</li>
+        <li>gem</li>
+    </ul>
+
+    <ol>
+        <li>gem</li>
+        <li>gem</li>
+    </ol>
+
+    <p><a class="link" href="https://mishracodes.github.io/#amit">This is a link to my website</a></p>
+
+   
+</body>
+</html>

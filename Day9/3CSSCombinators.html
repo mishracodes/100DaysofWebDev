@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Combinators</title>
+    <style>
+
+        .complete a{
+            color: deeppink;
+        }
+
+        div>p{
+            color: firebrick;
+        }
+
+        div+p{
+            color: green;
+            font-size: large;
+        }
+        article~p{
+            color: indigo;
+            font-size: x-large;
+        }
+
+    </style>
+</head>
+<body>
+    <p class="complete">This <a href="#">This is decendent selector </a>  is Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, amet.</p>
+    <p> this will not turn green</p>
+    <div>
+        <p>hello para 1</p>
+        <p>hello para 2</p>
+        <article>
+            <p>hello para 3</p>
+        </article>
+    </div>
+    <p>this will be coloured green due to sibling selector</p>
+    <section>
+        <article>
+            <p>hello this is section article</p>
+        </article>
+        <p>this is selected due to general sibling</p>
+        <ul>
+            <li>gem</li>
+            <li>gem</li>
+        </ul>
+        <p>this is selected due to general sibling</p>
+
+
+    </section>
+  
+
+
+</body>
+</html>

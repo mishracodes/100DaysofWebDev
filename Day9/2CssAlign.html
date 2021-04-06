@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Align</title>
+    <style>
+        .complete{
+            background-color: darksalmon;
+            width: 200px;
+            margin: auto;
+        }
+        .textAlign{
+            background-color: darkturquoise;
+            text-align: center;
+        }
+        .instagram{
+            width: 20%;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+        .right{
+            clear: both;
+            background-color: rgb(77, 209, 0);
+            position: absolute;
+            right: 0px;
+
+        }
+        .left{
+            float: left;
+            background-color: rgb(6, 120, 122);
+        }
+        .centervert{
+            clear: both;
+            padding: 40px 0;
+            background-color: darkturquoise;
+        }
+        .center{
+            text-align: center;
+            padding: 40px 0;
+            background-color: rgb(77, 209, 0);
+        }
+        .cent { 
+            height: 40px;
+            position: relative;
+            background-color: darksalmon;
+        }
+
+        .vhcent{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <p class="complete">This complete tag is aligned center to the width of screen</p>
+    <p class="textAlign">Only text is aligned at center </p>
+    <img class="instagram" src="https://instagram.flko4-1.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/p640x640/164395770_249408080195187_611584223000401750_n.jpg?tp=1&_nc_ht=instagram.flko4-1.fna.fbcdn.net&_nc_cat=103&_nc_ohc=QidzXeuttpUAX9lliKC&edm=AP_V10EAAAAA&ccb=7-4&oh=b432958b420227473b588d251f5ccd5b&oe=6091D74D&_nc_sid=4f375e" alt="">
+    <p class="right">right align using right froperty position absolute </p>
+    <p class="left">left align using float </p>
+    <p class="centervert">Only text is aligned at vertical center </p>
+    <p class="center">Only text is aligned at V/H center </p>
+    <p class="cent"><a class="vhcent" href="#">hy all</a></p>
+</body>
+</html>

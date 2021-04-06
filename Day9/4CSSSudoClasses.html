@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Sudo Classes</title>
+    <style>
+       
+        p:first-child{
+            color: lime;
+            background-color: maroon;
+            font-size: larger;
+        }
+        a.link{
+            color: rgb(219, 14, 14);
+        }
+        a.link:visited{
+            color: rgb(6, 223, 6);
+        }
+        a.link:hover{
+            color: rgb(32, 17, 25);
+        }
+        a.link:active{
+            color: rgb(255, 251, 0);
+        }
+        .hidden{
+            display: none;
+        }
+
+        div:hover .hidden{
+            display: block;
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+    <p>First child demo</p>
+    <p>This below link has sudo clases > </p>
+    <p><a class="link" href="https://mishracodes.github.io/#amit">This is a link to my website</a></p>
+
+    <div>this is the non hidden text
+        <p class="hidden">this is the hidden text</p></p>
+    </div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline Block</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            list-style: none;
+            background-color: rgb(196, 53, 10);
+            overflow: hidden;
+        }
+        li{
+            float: left;
+        }
+        a{
+            display: inline-block;
+            text-decoration: none;
+            color: wheat ;
+            padding: 20px 60px ;
+        }
+        .link{
+            display: inline-block;
+            color: burlywood;
+            background-color: darkred;
+            padding: 15px;
+            margin: 20px;
+            height: 80px;
+            width: 180px;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#aboutus">ABOUT US</a></li>
+        <li><a href="#help">HELP</a></li>
+    </ul>
+
+    <p>Hello this is a paragraph and <a class="link" href="#">This is link 1</a> and <a class="link"  href="#">This is link 2 </a></p>
+</body>
+</html>
