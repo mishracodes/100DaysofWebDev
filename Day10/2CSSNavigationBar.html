@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Navigation Bar</title>
+    <style>
+        ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        a{
+            text-decoration: none;
+            color: goldenrod;
+        }
+        div.nav2>ul>li>a{
+            display: inline-block;
+            background-color: maroon;
+            margin-top: 5px;
+            padding: 10px;
+            width: 200px;
+        }
+        div.nav2>ul>li>a:hover{
+            
+            background: rgb(219, 97, 97);
+           
+        }
+
+
+
+        div.nav3>ul{
+            background-color:  rgb(38, 141, 6);
+            overflow: hidden;
+                }
+       
+        
+        div.nav3>ul>li{
+            float: left;
+        } 
+        
+        div.nav3>ul>li>a{
+            display: inline-block;
+            
+            padding: 10px;
+            width: 200px;
+        }
+        div.nav3>ul>li>a:hover{
+            
+            background: rgb(32, 92, 2);
+           
+        }
+
+    </style>
+</head>
+<body>
+    <p>this is nav</p>
+    <div class="nav1">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#aboutus">AoutUs</a></li>
+            <li><a href="#contactus">Contact US</a></li>
+            <li><a href="#privacy">Privacy Policy</a></li>
+        </ul>
+    </div>
+
+    <p>this is horizontal nav</p>
+<div class="nav2">
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#aboutus">AoutUs</a></li>
+        <li><a href="#contactus">Contact US</a></li>
+        <li><a href="#privacy">Privacy Policy</a></li>
+    </ul>
+      </div>
+<p>this is vertical nav</p>
+<div class="nav3">
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#aboutus">AoutUs</a></li>
+        <li><a href="#contactus">Contact US</a></li>
+        <li><a href="#privacy">Privacy Policy</a></li>
+    </ul>
+    </div>
+</body>
+</html>

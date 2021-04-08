@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images Gallery</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .row1{
+            width: 50%;
+            float: left;
+            margin-top: 10px;
+        }
+        .row2{
+            width: 33.33%;
+            float: left;
+            margin-top: 10px;
+        }
+        .container{
+            clear: both;
+        }
+        img {
+            opacity: 0.5;
+        }
+
+        img:hover {
+            opacity: 1.0;
+        }
+        
+        @media only screen and (max-width: 700px) {
+        .row1 {
+            width: 100%;
+            margin: 6px 0;
+        }
+        }
+        @media only screen and (max-width: 700px) {
+        .row2 {
+            width: 50%;
+            margin: 6px 0;
+        }
+        }
+
+        @media only screen and (max-width: 500px) {
+        .row1 .row2 {
+            width: 100%;
+        }
+        }
+
+        .desc{
+            background-color: peachpuff;
+            padding: 5px;
+            text-align: center;
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container"> 
+        <div class="row1 box1"><img style="width:100%" src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8dGVjaG5vbG9neXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+                                <div class="desc">this is image desc</div>
+        </div>
+
+
+        <div class="row1 box2"><img style="width:100%" src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8dGVjaG5vbG9neXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+                                 <div class="desc">this is image desc</div>
+        </div>
+    </div>
+
+
+
+    <div class="container"> 
+        <div class="row2 box1"><img style="width:100%" src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NHx8dGVjaG5vbG9neXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+                                 <div class="desc">this is image desc</div>
+        </div>
+
+        <div class="row2 box2"><img style="width:100%" src="https://images.unsplash.com/photo-1526666923127-b2970f64b422?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjJ8fHRlY2hub2xvZ3l8ZW58MHwwfDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+                                 <div class="desc">this is image desc</div>
+        </div>
+
+        <div class="row2 box3"><img style="width:100%" src="https://images.unsplash.com/photo-1484662020986-75935d2ebc66?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NTB8fHRlY2hub2xvZ3l8ZW58MHwwfDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+                                 <div class="desc">this is image desc</div>
+        </div>
+
+    </div>
+</body>
+</html>
