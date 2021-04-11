@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Website Layout</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .header {
+            background-color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+            padding: 10px;
+            background: #dbdbdb;
+        }
+        .navbar{
+            background-color: #232323;
+            overflow: hidden;
+            position: sticky;
+            top: -1px;
+        }
+        .navbar>a{
+            color: #fff;
+            padding: 20px;
+            text-decoration: none;
+            float: left;
+            display: block;
+            font-weight: 800;
+        }
+        .navbar>a:hover{
+            background-color: #fff;
+            color: #232323;
+        }
+        .leftSidebar{
+            float: left;
+            width: 19%;
+            position: sticky;
+            top: 40px;
+            z-index: -1;
+            margin-right: 10px;
+        }
+        .rightSidebar{
+            float: left;
+            width: 24%;
+            position: sticky;
+            top: 40px;
+            z-index: -1;
+            margin-left: 10px;
+        }
+        .mainContent{
+            float: left;
+            width: 55%;
+        }
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .footer{
+            text-align: center;
+            background-color: #fff;
+            padding: 40px;
+        }
+        .item{
+            background-color: #fff;
+            padding: 30px;
+            margin-top: 10px;
+
+        }
+
+    </style>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="header">
+        <h1>Heading Goes Here</h1>
+    </div>
+    
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact Us</a>
+        <a href="#" style="float:right">Login</a>
+        <a href="#" style="float:right">Signup</a>
+    </div>
+
+    <div class="row">
+        <div class="leftSidebar">
+            <div class="item">
+                <h2>Archive</h2>
+                <ul type="square">
+                    <li>Jan &emsp;126 </li>
+                    <li>Feb &emsp;115 </li>
+                    <li>Mar &emsp;107 </li>
+                    <li>Apr &emsp;091 </li>
+                    <li>May &emsp;081 </li>
+                    <li>Jun &emsp;061 </li>
+                    <li>Jul &emsp;052 </li>
+                    <li>Aug &emsp;042 </li>
+                    <li>Sep &emsp;032 </li>
+                    <li>Oct &emsp;022 </li>
+                </ul>
+            </div>
+        </div>
+        <div class="mainContent">
+            <div class="item">
+                <h2>Master any Programming Language in 7 Steps</h2>
+                <h5>🤵 Author: mishracodes 🕚May 08, 2020</h5>
+                <div class="thumbImage"><img style="padding: 10px; margin:auto; width: 100%;" src="assets/prog.jpg" alt=""></div>
+                <p>Master any Programming Skill quickly in less effort – If you are reading this then you are at right place. In this article I will share some great steps which will help you to learn any programming language and not only programming if you follow these steps you can learn any skills. Here in this article I will explain everything step by step with examples and illustration.
+                   <br> If you really want to do something, you’ll find a way. If you don’t, you’ll find an excuse.
+                   <br> <b> Its never too later to learn something.</b></p>
+
+
+             
+            
+                <p>Learning any new skill is not a very difficult task. Not at all, Even if you never had written a single piece of code. Here are some Do’s and Don’ts after that seven steps you must follow to learn any programming language or any skill.
+                    <br> <br>At last there is an example of how I learned Programming Languages.</p>
+                
+                <h3>The only thing which I am asking from you is</h3>
+              <p> <br><b> Desire:</b> You must have a strong desire to learn a language or skill.
+                <br><b>Determined:</b> You must be determined to learn a language, no matter what happens, I will learn this skill within the next 2 months.
+                <br><b>Time:</b> Consistency is the key, devote only 3 hours daily but it must be consistent without leaving any day no matter anything happens.</p>
+                <br> 
+                <h4>The mistakes we do, while we are learning any new Programming Language</h4>
+                <br> <p> Learn only 1 or 2 Programming Language together not more than that
+                
+                    <br> <br>Don’t learn more than two new skills at a time, some of you might have failed many times because you were too optimistic while choosing what to learn if you cant manage, you cant learn. Hence only choose 1 or 2 new skills to learn. Do not plan that I will learn Python, Web Development, IoT, Machine Learning, Android Development, Java, React, etc. all at once. Otherwise you will end with not a single skill complete and a stressed mind.
+                follow steps and do not stress while learning
+                
+                
+                <br> <br> Don’t compare yourself with someone else
+                <br>You must compare yourself with others in the same field. But Don’t compare your day 1 with someone’s day 2000, getting my point. While learning you will browse many social media sites, join groups, visit websites where somebody will be sharing their knowledge, So NEVER compare yourself with them, its your day 1, and it’s their day 2000, so there is no point of comparison. It will only get you demotivated which is not good. If you want to compare with yourself that yesterday I completed 5 topics, today I will complete 6 topics but be realistic.
+                <br> <br>Learn only 3 hours daily but it must be consistent
+                <br>Don’t be inconsistent, consistency is the key to learn any new skill. You just have to give 3 hours daily in learning, if time permits you can practice more. But don’t be like this that today I will study for 6 hours and tomorrow I will not study. Or if you missed 2-3 days and on day 4 you practiced for 10 hours. It not going to help you, you might be thinking that by studying 10 hours today I have covered what was left yesterday. But doing this will form a habit in you and you will repeat this act day by day and a day will come when you have missed so many days in between that now your daily target becomes 5 hrs to master this skill. So when it was 3 hours daily and you were not consistent how 5 hours daily will fit into your daily schedule. So my advice is to learn 2-4 hours but be consistent.
+                <br>Now I have told you what to do and what not to do, So now let us start with some secrete recipe for learning any new Skill.</p>
+
+            </div>
+
+        </div>
+        <div class="rightSidebar">
+            <div class="item">
+                <h2>Total Pageviews</h2>
+                <br>
+                <div class="thumbImage"><img src="assets/stats.jpg" width="30%" alt=""></div>2024
+
+            </div>
+
+            <div class="item">
+                <h2>Contact form</h2>
+                <br>
+                <form style="padding: 20px;">
+                    Name <br>
+                    <input type="text" name="name" id=""><br>
+                    Email * <br>
+                    <input type="email" name="email" id=""><br>
+                    Message * <br>
+                    <textarea name="message" id="" cols="30" rows="10"></textarea>
+
+                </form>
+
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+    <div class="footer">
+        <h3>
+            Crafted with ❤️  by mishracodes | Copyright mishracodes 2021. All rights reserved.</h3>
+      </div>
+    
+    
+</body>
+</html>

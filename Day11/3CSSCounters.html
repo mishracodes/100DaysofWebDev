@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Counters</title>
+    <style>
+        div {
+            counter-reset: count;
+        }
+
+        a::before {
+            counter-increment: section;
+            content: "Link number # " counter(count) ": ";
+        }
+
+                    
+        h2 {
+            counter-reset: subcount;
+        }
+
+        h2::before {
+            counter-increment: count;
+            content: "Animal number # " counter(count) ". ";
+        }
+
+        h3::before {
+            counter-increment: subcount;
+            content: counter(count) "." counter(subcount) " ";
+        }
+    </style>
+</head>
+<body>
+    <p>css counter goes here</p>
+    <div class="counter">
+        <a href="#">Link1</a><br>
+        <a href="#">Link2</a><br>
+        <a href="#">Link3</a>
+    </div>
+    
+
+
+    <p>nested counter goes here</p>
+    <div class="nested">
+        <h2>Cat</h2>
+        <h3>Meow</h3>
+        <h3>Phurr</h3>
+        
+        <h2>Dog</h2>
+        <h3>Bark</h3>
+        <h3>Howl</h3>
+        
+        <h2>Cow</h2>
+        <h3>Moo</h3>
+    </div>
+</body>
+</html>

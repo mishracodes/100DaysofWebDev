@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Attribute Selectors</title>
+    <style>
+        a[target]{
+            background-color: burlywood;
+        }
+
+        ul[type="square"]{
+            border: 3px solid yellowgreen;
+        }
+
+        [title~=para] {
+            background-color: tomato;
+        }
+
+        [class|=image] {
+            border: 3px solid tomato;
+        }
+
+        [class^="photo"] {
+            background-color: yellow;
+        }
+
+        [class$="imaga"] {
+            background-color: rgb(4, 192, 89);
+        }
+        
+        [class*="img"] {
+            border: 3px solid rgb(185, 33, 6);
+        }
+    </style>
+</head>
+<body>
+    <p>this is an attribute selector example <a href="#" target="_blank">Logout</a></p>
+
+    <hr>
+    <br>
+
+    <ul type="square">
+        <li>hello</li>
+        <li>world</li>
+        <li>how</li>
+        <li>are </li>
+        <li>you</li>
+
+    </ul>
+    <hr>
+    <br>
+
+    <p title="text para">this is one text</p>
+    <p title="text">this is one text</p>
+    <p title="para">this is one text</p>
+    <hr>
+    <br>
+    
+    <p class="image-para">Hello world image image</p>
+    <img class="image" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="">
+    <p class="imagepara">Hello world image image</p>
+    <hr>
+    <br>
+
+
+    <p class="photopara">Hello world photo</p>
+    <img class="photo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="">
+   
+    
+    <hr>
+    <br>
+    
+    <p class="imaga-para">Hello world imaga imaga</p>
+    <img class="imaga_all" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="">
+    <p class="imagapara">Hello world imaga imaga</p>
+    <hr>
+    <br>
+
+
+
+    
+    <p class="img-para">Hello world img img</p>
+    <img class="phimgoto" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="">
+    <p class="imgimg">Hello world img img</p>
+    <hr>
+    <br>
+    
+    
+</body>
+</html>
