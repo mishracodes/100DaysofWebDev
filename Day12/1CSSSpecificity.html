@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specificity</title>
+    <style>
+        h1 {
+            border: 2px solid sienna;
+        }
+        h1 {
+            border: 2px dashed tomato;
+        }
+
+        h2#head {
+            border: 2px solid sienna;
+            background-color: springgreen;
+        }
+        #head {
+            border: 2px solid tomato;
+            background-color: white;
+        }
+        h2[id="head"] {
+            border: 2px solid brown;
+            background-color: purple;
+        }
+
+        .para {
+            border-top: 2px solid springgreen;
+            border-bottom:  2px solid purple;
+            padding: 30px;
+        }
+        p {
+            border-top: 2px solid brown;
+            border-bottom:  2px solid tomato;
+        }
+    </style>
+</head>
+<body>
+
+
+    <h1>This is heading 1 defining latest rule of css</h1>
+
+
+    <h2 id="head">This is heading 2 defining id selector rule</h2>
+
+
+    <p class="para">this is a paragraph</p>
+    
+</body>
+</html>

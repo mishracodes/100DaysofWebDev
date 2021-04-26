@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS backgrounds</title>
+    <style>
+        .multipleImages{
+
+            /*background-image: url(assets/doremon.png) left bottom no-repeat, url(assets/paper.jpg) left top repeat;*/
+            background-image: url(assets/doremon.png), url(assets/paper.jpg);
+            background-position: left bottom, left top;
+            background-size: contain, cover;
+            background-repeat: no-repeat, repeat;
+            padding: 100px;
+            background-clip: border-box;
+        }
+        .h1{
+            background: url(https://i.stack.imgur.com/GxJxH.jpg) no-repeat center fixed; 
+            background-size: cover;
+            padding: 300px;
+            color: yellow;
+            background-origin: content-box;
+        }
+
+    </style>
+</head>
+<body>
+
+    <p class="multipleImages">This paragraph uses multiple images as bg</p>
+
+
+    <h1 class="h1">This is h1 </h1>
+    
+</body>
+</html>

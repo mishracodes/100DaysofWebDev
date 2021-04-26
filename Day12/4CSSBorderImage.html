@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Border Image</title>
+    <style>
+        .one{
+            border: 10px solid transparent;
+            padding: 25px;
+            border-image: url(assets/border.png) 30 round;
+        }
+        .two{
+            border: 10px solid transparent;
+            padding: 25px;
+            border-image: url(assets/border.png) 10 round;
+
+        }
+        .three{
+            border: 10px solid transparent;
+            padding: 25px;
+            border-image: url(assets/border.png) 10 stretch;
+            
+        }
+        .four{
+            border: 10px solid transparent;
+            padding: 25px;
+            border-image: url(assets/border.png) 30 stretch;
+            
+        }
+        .five{
+            border: 10px solid transparent;
+            padding: 25px;
+            border-image: url(assets/border.png) 50 round;
+   
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <p class="one">Border one goes here</p>
+    <p class="two">Border two goes here</p>
+    <p class="three">Border three goes here</p>
+    <p class="four">Border four goes here</p>
+    <p class="five">Border five goes here</p>
+    
+</body>
+</html>
